@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      京东(JD.COM)-注册
+    </title>
+    <meta name="description" content="京东JD.COM-专业的综合网上购物商城,销售发簪发夹,耳饰,戒指,胸针等优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"/>
+    <meta name="Keywords" content="发簪发夹,耳饰,戒指,胸针"/>
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+	<!-- Bootstrap -->
+    <link href="cs/css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="bs/js/html5shiv.min.js"></script>
+      <script src="bs/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="cs/js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="cs/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('#myModal').modal({backdrop: 'static', keyboard: false}); 
+    		$('#myModal').modal('show');
+    		$('#close').click(function(){
+    			history.go(-1);
+    		});
+    	});
+    </script>
+    
+
+    <link rel="stylesheet" href="cs/css/zhuce.css">
+</head>
+<body >
+<div class="bg">
+  <form  action="#" method="post">
+  <h2>会员注册</h2>
+    <ul>
+       <li>
+      <span>用户登陆名：</span>
+        <input name="xuName" type="text" pattern="^[\u4e00-\u9fa5]{0,}$" 
+        placeholder="例如：王明" required autofocus/>(必须填写，只能输入汉字)
+            </li>
+            <li>
+      <span>真实姓名：</span>
+        <input name="realName" type="text" pattern="^[\u4e00-\u9fa5]{0,}$"
+         placeholder="例如：王明" required autofocus/>(必须填写，只能输入汉字)
+            </li>
+            <li>
+      <span>电子邮箱：</span>
+        <input name="myEmail" type="email" placeholder="1494156459@qq.com"
+        required multiple />(必须填写)
+            </li>
+            <li>
+      <span>身份证号：</span>
+        <input name="card" type="text" pattern="^\d{8,18}｜[0-9x]{8,18}｜[0-9x]{8,18}?$]" 
+        required />(必须填写，能够以数字、字母X结尾的短身份证号)
+            </li>
+            <li>
+      <span>手机号码：</span>
+        <input name="telphone" type="tel" pattern="^\d{11}$" required/>(必须填写)
+            </li>
+            <li>
+               <span>密码：</span>
+               <input name="password" type="password" minlength="6" maxlength="20"  
+               required />(必须填写)
+            </li> 
+           <li class="lucky">
+            <span>幸运颜色：</span>
+            <input name="myColor" type="color" value="#fed000" />
+            (请选择你喜欢的颜色)
+           </li>
+          <li class="btn">
+          <a href="index.html">
+            <input type="button" value="提交"/>
+          </a>
+          <a href="">
+                <input  type="reset"  value="重置" />
+          </a>
+          </li>
+    </ul>
+  </form>  
+  </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+ aria-labelledby="myModalLabel"aria-hidden=”true” data-backdrop=”static”>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" 
+        aria-label="Close" id="close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">注册协议</h4>       
+      </div>
+      <div class="modal-body">        
+        <div>
+			<p>
+				【<b>审慎阅读</b>】您在申请注册流程中点击同意前，应当认真阅读以下协议。<br>请您务必审慎阅读、充分理解协议中相关条款内容，其中包括</b>：<br>
+				<b>1. 与您约定免除或限制责任的条款；</b><br>
+				<b>2. 与您约定法律适用和管辖的条款；</b><br>
+				<b>3. 其他以粗体下划线标识的重要条款。</b>
+			</p>
+			<p style="margin-top:22px;">
+				如您对协议有任何疑问，可向平台客服咨询。<br>
+				【<b>特别提示</b>】当您按照注册页面提示填写信息、阅读并同意协
+        议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。
+			</p>		
+		</div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">同意并继续</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

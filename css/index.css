@@ -1,0 +1,315 @@
+/*
+* @Author: apple
+* @Date:   2017-07-25 11:10:42
+* @Last Modified by:   apple
+* @Last Modified time: 2017-07-27 00:20:43
+*/
+
+img {
+	/* display: block; */
+	vertical-align: top;
+	/* 解决图片底测有空白缝隙的问题 */
+}
+.w {
+	/* 版心的公共类 */
+	width: 1190px;
+	/* 京东的版心是 1190 */
+	margin: 0 auto;
+}
+.fl {
+	/*  浮动的公共类 */
+	float: left;
+}
+.fr {
+	float: right;
+}
+a {
+	text-decoration: none;
+	/* 取消下划线 */
+	font-size: 12px;
+	color: #999;
+}
+a:hover {
+	color: #c81623;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+input, button {
+	border: 0;
+	outline: none;
+	/* 取消轮廓边框 */
+}
+ul {
+	list-style: none;
+}
+body {
+	background-color: #f6f6f6;
+}
+.f10 {
+	color: #f10215!important;
+}
+@font-face {
+	/* 声明字体 */
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?8qhwk5');
+	src: url('../fonts/icomoon.eot?8qhwk5#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?8qhwk5') format('truetype'), url('../fonts/icomoon.woff?8qhwk5') format('woff'), url('../fonts/icomoon.svg?8qhwk5#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*/* CSS Document */
+
+/*全局样式*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	outline: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul, li {
+	list-style-type: none;
+}
+img {
+	border: 0px;
+}
+*/
+/*头部样式*/
+
+.topbox {
+	width: 100%;
+	height: 130px;
+	background-color: #a94442;
+}
+.top {
+	width: 1200px;
+	height: 130px;
+	margin: auto;
+	position: relative;
+}
+.top>ul {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.top>ul>li {
+	width: 70px;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	color: #8C2729;
+	cursor: pointer;
+}
+.top>ul>li>a {
+	color: #000;
+}
+.top>ul>li>a:hover {
+	color: #8C2729;
+}
+.top-logo {
+	margin-top: 10px;
+	margin-left: -45px;
+}
+.t-sousuo {
+	width: 368px;
+	height: 60px;
+	position: absolute;
+	top: 30px;
+	left: 550px;
+}
+.sousuok {
+	width: 380px;
+	height: 30px;
+	border: 2px solid #a62721;
+	position: relative;
+}
+.t-txt {
+	width: 280px;
+	height: 29px;
+	border: none;
+	background: none;
+	padding-left: 20px;
+	color: #5f5f5e;
+	outline: none;
+}
+.t-btn {
+	width: 80px;
+	height: 28px;
+	position: absolute;
+	left: 298px;
+	background-color: #a62721;
+	color: #fff;
+	font-size: 16px;
+	line-height: 0px;
+	text-align: center;
+	outline: none;
+	/*cursor: pointer;*/
+}
+.t-btn:active {
+	background-color: #860A0C;
+}
+.t-gjc {
+	font-size: 12px;
+	color: #6e6e6e;
+}
+/*导航样式*/
+
+.navbox {
+	width: 100%;
+	height: 50px;
+	background-color: #A62721;
+}
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: auto;
+}
+.nav>ul>li {
+	width: 240px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	background-image: url(../images/nav-bg.gif);
+	background-repeat: no-repeat;
+	background-position: -240px 0px;
+	transition: all 1s;
+}
+.nav>ul>li>a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+.navhover {
+	background-position: 0px 0px !important;
+}
+/* 页面底部 */
+
+footer {
+	margin-top: 35px;
+	height: 500px;
+	background-color: #EAEAEA;
+}
+footer a {
+	color: #666;
+}
+.service {
+	padding: 30px 0;
+	border-bottom: 1px solid #DEDEDE;
+	overflow: hidden;
+}
+.service ul li {
+	width: 297px;
+	height: 43px;
+	position: relative;
+	line-height: 43px;
+	float: left;
+}
+.service li h5 {
+	position: absolute;
+	top: 0;
+	left: 38px;
+	width: 36px;
+	height: 43px;
+	background: url(../images/ico.png) no-repeat;
+	text-indent: -999em;
+}
+.service li:nth-child(2) h5 {
+	background-position: 0 -43px;
+}
+.service li:nth-child(3) h5 {
+	background-position: 0 -86px;
+}
+.service li:nth-child(4) h5 {
+	background-position: bottom;
+}
+.service li p {
+	font-weight: 700;
+	margin-left: 82px;
+}
+/* 帮助模块 */
+
+.help {
+	height: 200px;
+	border-bottom: 1px solid #DEDEDE;
+	padding-top: 25px;
+	box-sizing: border-box;
+}
+.help dl {
+	width: 192px;
+	float: left;
+}
+.help dt, .coverage h5 {
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+.help dd {
+	height: 22px;
+}
+.coverage {
+	width: 200px;
+	height: 150px;
+	background: url(../images/ico_footer.png) no-repeat;
+}
+.coverage h5 {
+	padding-left: 35px;
+}
+.coverage p {
+	font-size: 12px;
+	color: #666;
+	line-height: 18px;
+	width: 180px;
+}
+.coverage a {
+	display: block;
+	margin-top: 5px;
+	width: 180px;
+	text-align: right;
+}
+/* 底部版权 */
+
+.copyright {
+	padding-top: 20px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+.copyright span {
+	margin: 0 10px;
+}
+.copyright div {
+	margin-top: 20px;
+}
+.copyright div p {
+	line-height: 22px;
+}
+.foot-icon a {
+	display: inline-block;
+	width: 103px;
+	height: 33px;
+	background: url(../images/ico_footer.png) no-repeat 0 -150px;
+	margin: 20px 4px 0;
+	/* 行内块可以用 text-align: center 来实现居中 */
+}
+.foot-icon a:nth-child(2) {
+	background-position: -103px -150px;
+}
+.foot-icon a:nth-child(3) {
+	background-position: 0 -183px;
+}
+.foot-icon a:nth-child(4) {
+	background-position: -103px -183px;
+}
+.foot-icon a:nth-child(5) {
+	background-position: 0 -216px;
+}
+.foot-icon a:nth-child(6) {
+	background-position: -103px -216px;
+}

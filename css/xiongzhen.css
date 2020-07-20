@@ -1,0 +1,112 @@
+.new ul {
+	width: 1210px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+.new ul>li {
+	float: left;
+	width: 350px;
+	height: 350px;
+	border: 1px solid #CCC;
+	overflow: hidden;
+	position: relative;
+}
+.new ul>li:nth-child(2) {
+	margin: 0 50px;
+}
+.new ul>li>a {
+	color: #FFF;
+}
+.js {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 10px;
+	color: white;
+}
+.new ul div {
+	position: absolute;
+	right: -350px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transition: all 1s;
+}
+.new ul>li:hover div {
+	top: 0;
+}
+.new ul hgroup {
+	position: absolute;
+	top: 350px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transition: all 1s;
+}
+.new ul>li:hover hgroup {
+	top: 0;
+}
+.ck {
+	width: 20px;
+	height: auto;
+	font-size: 20px;
+	margin: auto;
+	color: white;
+	font-size: 30px;
+	margin-top: 80px;
+}
+/*.new ul div:nth-child(2) {
+	position: absolute;
+	left: -200px;
+	top: 0px;
+	width: 200px;
+	height: 350px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transition: all 1s;
+}
+.new ul > li:hover div:nth-child(2) {
+	left: 0;
+	padding-top: 100px;
+}
+.new ul > li:hover div:nth-child(2) p {
+	font-size: 15px;
+	margin-top: 10px;
+}
+.new ul hgroup:nth-child(2) {
+	position: absolute;
+	left: -200px;
+	top: 0px;
+	width: 200px;
+	height: 350px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transition: all 1s;
+}
+.new ul > li:hover hgroup:nth-child(2) p {
+	font-size: 15px;
+	margin-top: 10px;
+}
+.new ul > li:hover hgroup:nth-child(2) {
+	left: 0;
+	padding-top: 100px;
+}
+.ck {
+    width: 20px;
+    height: auto;
+    font-size: 20px;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    margin-top: 80px;
+}
+*/
